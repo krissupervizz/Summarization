@@ -49,9 +49,17 @@ jobs:
           
           git add .
           
+          git rm --cached gazeta_train.jsonl
+          
+          git rm --cached gazeta_val.jsonl
+          
+          git rm --cached gazeta_test.jsonl
+          
           git commit -am "GitHub Actions update files $(date)"
           
-          git push origin main
+          git branch b2
+          
+          git push origin b2
           
         env:
           REPO_KEY: ${{secrets.GITHUB_TOKEN}}

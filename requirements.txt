@@ -1,0 +1,9 @@
+matplotlib
+re
+nltk
+networkx
+node2vec
+sklearn
+scipy
+numpy
+jsonlines

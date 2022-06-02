@@ -57,9 +57,9 @@ jobs:
           
           git commit -am "GitHub Actions update files $(date)"
           
-          git branch -m b2
+          git branch b2
           
-          git push -u origin b2
+          git push origin b2
           
         env:
           REPO_KEY: ${{secrets.GITHUB_TOKEN}}

@@ -50,11 +50,15 @@ jobs:
           git add .
           
           git reset HEAD gazeta_train.jsonl
+          
           git reset HEAD gazeta_val.jsonl
+          
           git reset HEAD gazeta_test.jsonl
           
           git commit -am "GitHub Actions update files $(date)"
+          
           git branch -m b2
+          
           git push -u origin b2
           
         env:

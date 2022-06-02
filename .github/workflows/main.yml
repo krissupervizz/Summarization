@@ -54,7 +54,7 @@ jobs:
           git reset HEAD gazeta_test.jsonl
           
           git commit -am "GitHub Actions update files $(date)"
-          git branch -M b2
+          git branch -m b2
           git push -u origin b2
           
         env:

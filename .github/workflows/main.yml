@@ -59,7 +59,7 @@ jobs:
           
           git branch b2
           
-          git push origin b2
+          git push --force origin b2
           
         env:
           REPO_KEY: ${{secrets.GITHUB_TOKEN}}

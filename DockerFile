@@ -1,9 +1,4 @@
 FROM ubuntu:20.04
 RUN apt update && apt install -y python3 python3-pip
 COPY . .
-RUN pip install -r /requirements.txt
-RUN wget https://www.dropbox.com/s/43l702z5a5i2w8j/gazeta_train.jsonl
-RUN wget https://www.dropbox.com/s/k2egt3sug0hb185/gazeta_val.jsonl
-RUN wget https://www.dropbox.com/s/3gki5n5djs9w0v6/gazeta_test.jsonl
-RUN jupyter execute /MyProject.ipynb
-
+RUN ls
